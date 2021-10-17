@@ -19,3 +19,5 @@ async def commande(ctx): # remplace commande par ce que tu veux
     embed.add_field(name="ID du serveur", value=f"{ctx.guild.id}")
     embed.set_thumbnail(url=f"{ctx.guild.icon}")
     embed.set_thumbnail(url="image")
+
+bot.run('token') # token à trouver sur https://discord.com/developers/applications
