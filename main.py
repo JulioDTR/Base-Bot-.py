@@ -7,9 +7,9 @@ from urllib import parse, request
 import re
 
 # Bot
-bot = commands.Bot(command_prefix='!', description="Description") # remplace Description par ce que tu veux
+bot = commands.Bot(command_prefix='!', description="Description")
 
-# Commande d'infos sur le serveur
+
 @bot.command()
 async def commande(ctx): # remplace commande par ce que tu veux
     embed = discord.Embed(title=f"{ctx.guild.name}", description="Lorem Ipsum asdasd", timestamp=datetime.datetime.utcnow(), color=discord.Color.blue())
@@ -20,4 +20,4 @@ async def commande(ctx): # remplace commande par ce que tu veux
     embed.set_thumbnail(url=f"{ctx.guild.icon}")
     embed.set_thumbnail(url="image")
 
-bot.run('token') # token à trouver sur https://discord.com/developers/applications
+bot.run('token')
